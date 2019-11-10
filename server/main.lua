@@ -8,7 +8,7 @@ AddEventHandler('chatMessage', function(source, name, message)
 		CancelEvent()
 
 		if Config.EnableESXIdentity then name = GetCharacterName(source) end
-		TriggerClientEvent('chat:addMessage', -1, { args = { _U('ooc_prefix', name), message }, color = { 128, 128, 128 } })
+		TriggerClientEvent('chat:addMessage', -1, { args = { _U('ooc_prefix', name), message }, color = Config.ColorChat })
 	end
 end)
 
@@ -22,7 +22,7 @@ RegisterCommand('twt', function(source, args, rawCommand)
 	local name = GetPlayerName(source)
 	if Config.EnableESXIdentity then name = GetCharacterName(source) end
 
-	TriggerClientEvent('chat:addMessage', -1, { args = { _U('twt_prefix', name), args }, color = { 0, 153, 204 } })
+	TriggerClientEvent('chat:addMessage', -1, { args = { _U('twt_prefix', name), args }, color = Config.ColorTwt })
 	--print(('%s: %s'):format(name, args))
 end, false)
 
@@ -36,7 +36,7 @@ RegisterCommand('me', function(source, args, rawCommand)
 	local name = GetPlayerName(source)
 	if Config.EnableESXIdentity then name = GetCharacterName(source) end
 
-	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('me_prefix', name), args, { 255, 0, 0 })
+	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('me_prefix', name), args, Config.ColorEmote)
 	--print(('%s: %s'):format(name, args))
 end, false)
 
@@ -50,7 +50,7 @@ RegisterCommand('do', function(source, args, rawCommand)
 	local name = GetPlayerName(source)
 	if Config.EnableESXIdentity then name = GetCharacterName(source) end
 
-	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('do_prefix', name), args, { 0, 0, 255 })
+	TriggerClientEvent('esx_rpchat:sendProximityMessage', -1, source, _U('do_prefix', name), args, Config.ColorEmote)
 	--print(('%s: %s'):format(name, args))
 end, false)
 
