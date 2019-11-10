@@ -1,4 +1,4 @@
-# esx_rpchat
+# esx_rpchat - Ascent Roleplay Modifications
 
 #### Description
 This is a proximity chat script. With a few commands such as Twitter, OOC and Local Me
