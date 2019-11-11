@@ -3,6 +3,10 @@
 #### Description
 This is a proximity chat script. With a few commands such as Twitter, OOC and Local Me
 
+## Ascent Roleplay Changes
+
+* Added configurable colors (ColorEmote, ColorChat, ColorTwt)
+
 ## Download & Installation
 
 ### Using [fvm](https://github.com/qlaffont/fvm-installer)
