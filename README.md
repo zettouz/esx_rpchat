@@ -1,6 +1,6 @@
 # esx_rpchat - Ascent Roleplay Modifications
 
-#### Description
+## Description
 This is a proximity chat script. With a few commands such as Twitter, OOC and Local Me
 
 ## Ascent Roleplay Changes
@@ -27,7 +27,7 @@ git clone https://github.com/ESX-Org/esx_rpchat [esx]/esx_rpchat
 ## Installation
 - Add `start esx_rpchat` to your server.cfg
 
-# Legal
+## Legal
 ### License
 esx_rpchat - RP chat for ESX
 
